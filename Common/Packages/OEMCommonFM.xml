@@ -95,6 +95,12 @@
         </FeatureIDs>
       </PackageFile>
 
+      <PackageFile Path="%PKGBLD_DIR%" Name="%OEM_NAME%.Registry.FilesAndRegKeys.cab">
+        <FeatureIDs>
+          <FeatureID>OEM_FilesAndRegKeys</FeatureID>
+        </FeatureIDs>
+      </PackageFile>
+
     </OEM>
     <OEMFeatureGroups/>
   </Features>
