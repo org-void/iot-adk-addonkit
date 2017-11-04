@@ -1,45 +1,43 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <WindowsCustomizations>
   <PackageConfig xmlns="urn:schemas-Microsoft-com:Windows-ICD-Package-Config.v1.0">
-    <ID>{4d34ad86-0b26-4fc9-b3ce-d3fe1fff56a8}</ID>
-    <Name>VboxTestProv</Name>
-    <Version>1.0.0.0</Version>
+    <ID>{59a0596a-b9e0-430a-8751-79ce63ae874c}</ID>
+    <Name>VBOX_TEST</Name>
+    <Version>1.2</Version>
     <OwnerType>OEM</OwnerType>
     <Rank>0</Rank>
+    <Notes />
   </PackageConfig>
   <Settings xmlns="urn:schemas-microsoft-com:windows-provisioning">
     <Customizations>
       <Common>
-        <!--Accounts>
-          <ComputerAccount>
-            <ComputerName>iot-%RAND:7%</ComputerName>
-          </ComputerAccount>
-        </Accounts-->
         <Policies>
           <ApplicationManagement>
-            <AllowAppStoreAutoUpdate>Allowed</AllowAppStoreAutoUpdate>
             <AllowAllTrustedApps>Yes</AllowAllTrustedApps>
+            <AllowAppStoreAutoUpdate>Allowed</AllowAppStoreAutoUpdate>
+            <AllowDeveloperUnlock>Yes</AllowDeveloperUnlock>
           </ApplicationManagement>
-          <!--Security>
+          <Security>
             <AllowAddProvisioningPackage>Yes</AllowAddProvisioningPackage>
             <AllowRemoveProvisioningPackage>Yes</AllowRemoveProvisioningPackage>
             <RequireDeviceEncryption>No</RequireDeviceEncryption>
             <RequireProvisioningPackageSignature>No</RequireProvisioningPackageSignature>
           </Security>
           <Update>
-            <ActiveHoursEnd>17</ActiveHoursEnd>
+            <ActiveHoursEnd>0</ActiveHoursEnd>
             <ActiveHoursMaxRange>18</ActiveHoursMaxRange>
-            <ActiveHoursStart>8</ActiveHoursStart>
+            <ActiveHoursStart>6</ActiveHoursStart>
             <AllowAutoUpdate>Auto-install and restart without end-user control</AllowAutoUpdate>
-            <AllowMUUpdateService>No</AllowMUUpdateService>
+            <AllowAutoWindowsUpdateDownloadOverMeteredNetwork>1</AllowAutoWindowsUpdateDownloadOverMeteredNetwork>
+            <AllowMUUpdateService>Yes</AllowMUUpdateService>
             <AllowNonMicrosoftSignedUpdate>Yes</AllowNonMicrosoftSignedUpdate>
             <AllowUpdateService>Yes</AllowUpdateService>
             <BranchReadinessLevel>Current Branch</BranchReadinessLevel>
             <DeferFeatureUpdatesPeriodInDays>0</DeferFeatureUpdatesPeriodInDays>
             <DeferQualityUpdatesPeriodInDays>0</DeferQualityUpdatesPeriodInDays>
-            <DetectionFrequency>22</DetectionFrequency>
+            <DetectionFrequency>1</DetectionFrequency>
             <RequireDeferUpgrade>Do not pause updates</RequireDeferUpgrade>
-          </Update-->
+          </Update>
         </Policies>
       </Common>
     </Customizations>
