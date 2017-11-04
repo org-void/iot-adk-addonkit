@@ -32,7 +32,7 @@
     <AdditionalFM>%BLD_DIR%\MergedFMs\OEMCommonFM.xml</AdditionalFM>
     <AdditionalFM>%BLD_DIR%\MergedFMs\OEMFM.xml</AdditionalFM>
     <!-- Including the test features -->
-    <AdditionalFM>%AKROOT%\FMFiles\x86\IoTUAPNonProductionPartnerShareFM.xml</AdditionalFM>
+    <!-- <AdditionalFM>%AKROOT%\FMFiles\x86\IoTUAPNonProductionPartnerShareFM.xml</AdditionalFM> -->
   </AdditionalFMs>
   <Features>
     <Microsoft>
